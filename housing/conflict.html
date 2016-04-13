@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Stockton Housing Portal</title>
+
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">	
+  
+    <link href="css/styles.css" rel="stylesheet">
+
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+	
+	
+     <nav class="navbar navbar-inverse navbar-fixed-top" id="hide">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Stockton Housing Portal</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="kim">Kimbetly Davis</li>
+	    <li class="divider"></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     
+      <div class="header clearfix navbar-collapse collapse navbar-inverse">
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Messages  <span class="badge"> 42 </span> &nbsp;</a></li>
+          </ul>
+        </nav>
+        
+			<ul class="nav navbar-nav">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kimberly Davis <span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Profile</a></li>
+			    <li><a href="#">Settings</a></li>
+			    
+			    <li class="divider"></li>
+			    <li><a href="#">Sign out</a></li>
+			  </ul>
+			</li>
+			</ul>
+      </div>
+
+     
+    
+      <div class="bg">
+	<img src="img/staged.jpg" width="100%">
+	<img width="260px" src="img/Stockton_Distinctive.png" id="distinctive">
+      </div>
+      
+      <div class="big-title">
+	<h1><mark>Stockton University Housing Portal</mark></h1>
+      </div>
+     
+
+      <div class="row main">
+	
+        <div class="col-lg-3">
+          <ul class="nav nav-pills nav-stacked main-menu">
+		<li role="presentation"><a href="index.html">Home</a></li>
+		<li role="presentation"><a href="#">Apply</a></li>
+		<li role="presentation"><a href="bill.html">View Bill</a></li>
+		<li role="presentation"  class="active" ><a href="Conflict.html">Report an Issue</a></li>
+		<li role="presentation"><a href="#">Request Maintenance</a></li>
+		<li role="presentation"><a href="forms.html">Forms</a></li>
+		<li role="presentation"><a href="#">FAQ</a></li>
+	  </ul>
+	  <br><br> <!--
+	        <div>
+                         <span id="ctl00_ctl07_html_lblText" class="text-block-line-height" AutoSetting="False"><IFRAME style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; OVERFLOW: hidden; BORDER-LEFT: medium none; WIDTH: 199px; BORDER-BOTTOM: medium none; HEIGHT: 290px" src="http://iconosquare.com/widget.php?choice=myfeed&username=livestockton&show_infos=true&linking=instagram&width=199&height=290&mode=grid&layout_x=1&layout_y=1&padding=&photo_border=true&background=FFFFFF&text=75B2DD&widget_border=true&radius=0&border-color=DDDDDD&user_id=1393778014&time=1406147023654" frameBorder=0 width=199 scrolling=no height=290 allowTransparency></IFRAME></TD> <!-- --></span>
+		<!--</div>-->
+        </div>
+
+        <div class="col-lg-9">
+	  <div id="messageOnSubmit" style="display:none;"><br>
+	    <p>You have successfully reported an issue.</p>
+	    <p>Thank you for your inquiry. Stockton Housing will get back to you as soon as possible.</p>
+	    <p>Inquiry Number: 0089</p>
+	  </div>
+	  <form id="coflictForm">
+	  <h3>Report an Issue</h3>
+	  <br>
+	  <div class="form-group">
+	    <label for="problemChoice">I'm having a problem with my &nbsp;</label>
+	    <select id="problemChoice" class="selectpicker">
+	      <option>roommate</option>
+	      <option>neighbor</option>
+	      <option>room</option>
+	      <option>academics</option>
+	      <option>other</option>
+	    </select>
+	  </div>
+
+	  
+	    <div class="form-group">
+			      <label for="message">Describe your problem in more detail:</label>
+			      <div>
+				  <textarea class="form-control" id="message" name="message" placeholder="" rows="7"></textarea>
+			      </div>
+	    </div>
+	    
+	    <button type="button" class="btn btn-default" onclick="conflictSubmitted()">Submit</button>
+	  
+	  </form>
+	  <br><br>
+        </div>
+      
+<script>
+    function conflictSubmitted() {
+	document.getElementById("coflictForm").style.display = "none";
+	document.getElementById("messageOnSubmit").style.display = "inline";
+    }
+</script>
+      
+     
+      </div> <!--row-->
+      
+      
+      <footer class="footer">
+        <div class="row">
+		<div class="col-lg-4">
+			<ul class="list-unstyled">
+			<li><h4>Links:</h4></li>
+			<li><a href="forms.html#">Car Registration Form</a></li>
+			<li><a href="forms.html#">Meal Plan Change Form</a></li>
+			<li><a href="forms.html#">Information Release Form</a></li>
+			<li><a href="forms.html#">Screen and Bed Waiver Form</a></li>
+			<li><a href="forms.html#">Housing Contract Cancellation Form</a></li>
+			<li><a href="https://rsc.managemyid.com/reference.dca?cdx=login" target="_blank">Manage my ID</a></li>
+			<li><a href="http://www.laundryview.com/lvs.php" target="_blank">Laundry View</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-3 text-center">
+			<h4>Follow us:</h4>
+			<br>
+			<a href="https://www.facebook.com/StocktonUResLife" target="_blank"><img src="img/facebook.png" width="48px"></a>
+			<a href="https://instagram.com/livestockton/" target="_blank"><img src="img/instagram.png" width="48px"></a>
+			<a href="https://www.youtube.com/user/StocktonCollegeNJ"  target="_blank"><img src="img/youtube.png" width="48px"></a>
+		</div>
+		<div class="col-lg-5">
+			<h4 class="text-center">Contact:</h4>
+			
+				<dl class="dl-horizontal">
+
+
+				<dt>Email:</dt><dd>housing@stockton.edu</dd>
+				<dt>Location:</dt> <dd>A100, 82-4</dd>  
+				<dt>Telephone:</dt> <dd>(609) 652-4697</dd>
+				
+				<dt>Hours:</dt> <dd>9:00 AM - 7:00 PM</dd>
+					
+				<dt>Address:</dt> <dd>101 Vera King Farris Drive</dd>
+				<dd>Galloway, New Jersey 08205</dd>
+				<dt>Fax:</dt> <dd>(609) 626-5520</dd>
+			</dl>
+		</div>
+	<div style="clear: both;"></div>
+		<div id="copy">
+			<p>&copy;</p>
+		</div>
+	</div>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+  </body>
+</html>

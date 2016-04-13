@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Stockton Housing Portal</title>
+
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">	
+  
+    <link href="css/styles.css" rel="stylesheet">
+
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+		
+     <nav class="navbar navbar-inverse navbar-fixed-top" id="hide">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Stockton Housing Portal</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="kim">Kimbetly Davis</li>
+	    <li class="divider"></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+ 
+      <div class="header clearfix navbar-collapse collapse navbar-inverse">
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Messages  <span class="badge"> 42 </span> &nbsp;</a></li>
+          </ul>
+        </nav>
+        
+			<ul class="nav navbar-nav">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kimberly Davis <span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Profile</a></li>
+			    <li><a href="#">Settings</a></li>
+			    
+			    <li class="divider"></li>
+			    <li><a href="#">Sign out</a></li>
+			  </ul>
+			</li>
+			</ul>
+      </div>
+
+     
+    
+      <div class="bg">
+	<img src="img/staged.jpg" width="100%">
+	<img width="260px" src="img/Stockton_Distinctive.png" id="distinctive">
+      </div>
+      
+      <div class="big-title">
+	<h1><mark>Stockton University Housing Portal</mark></h1>
+      </div>
+     
+
+      <div class="row main">
+	
+	
+        <div class="col-lg-3">
+          <ul class="nav nav-pills nav-stacked main-menu">
+		<li role="presentation"><a href="index.html">Home</a></li>
+		<li role="presentation"><a href="#">Apply</a></li>
+		<li role="presentation"><a href="bill.html">View Bill</a></li>
+		<li role="presentation"><a href="Conflict.html">Report an Issue</a></li>
+		<li role="presentation"><a href="#">Request Maintenance</a></li>
+		<li role="presentation" class="active"><a href="forms.html">Forms</a></li>
+		<li role="presentation"><a href="#">FAQ</a></li>
+	  </ul>
+	  <br><br>
+	        
+        </div>
+
+        <div class="col-lg-9">
+		
+
+	    
+	    <button class="btn btn-primary btn-long" type="button" data-toggle="collapse" data-target="#mealDiv" aria-expanded="false" aria-controls="mealDiv">
+	      Meal Plan Change Form
+	    </button>
+	    <div class="collapse" id="mealDiv">
+	      <div class="well">
+		<div><p>Use the form below to change your meal plan. If you have any questions or concerns, email housing@stockton.edu. Please note that changes to meal plans at this time will only affect the Fall 2015 - Spring 2016 term and may take up to 2 business days to be processed. Meal plan descriptions can be found here. </p>
+</div>
+		<div id="messageMeal" style="display:none;"><p>Your application for a meal plan change has been submitted. A confirmation email has been sent to your Stockton account.</p></div>
+		<form id="mealForm">
+		  		    <dl class="dl-horizontal"><br>
+		    <div class="form-group">
+		      <dt><label>Housing:</label></dt>
+		      <dd><p>Seaview</p></dd>
+		    </div>
+		    <div class="form-group">
+		      <dt><label>Current Meal Plan:</label></dt>
+		      <dd>
+			<div class="form-group">
+			  <select id="currentMealChoice" class="selectpicker form-control">
+			    <option>none</option>
+			    <option>Freedom 5</option>
+			    <option>Fab 14</option>
+			    <option>Ultimate 19</option>
+			    <option>Seaview 50</option>
+			  </select>
+			</div>
+		      </dd>
+		    </div>
+		    <div class="form-group">
+		      <dt><label>Desired Mesl Plan:</label></dt>
+		      <dd>
+			<div class="form-group">
+			  <select id="desiredMealChoice" class="selectpicker form-control">
+			    <option>none</option>
+			    <option>Freedom 5</option>
+			    <option>Fab 14</option>
+			    <option>Ultimate 19</option>
+			    <option>Seaview 50</option>
+			  </select>
+			</div>
+		      </dd>
+		    </div>
+		    <div class="form-group">
+		      <dt><label>Meal Plan Increase <br>(optional):</label></dt>
+		      <dd>
+			<div class="form-group">
+			  <select id="flexMealChoice" class="selectpicker form-control">
+			    <option>select</option>
+			    <option>Add $100 and receive $105 additional flex dollars</option>
+			    <option>Add $150 and receive $161 additional flex dollars</option>
+			    <option>Add $200 and receive $218 additional flex dollars</option>
+			    <option>Add $300 and receive $330 additional flex dollars</option>
+			  </select>
+			</div>
+		      </dd>
+		    </div>
+		    <div><br></div>
+		   <button type="button" class="btn btn-default" onclick="functionMeal()">Submit</button>
+		    </dl>
+		</form>
+		
+	      </div>
+	    </div>
+	    
+	    <br><br>
+	    <button class="btn btn-primary btn-long" type="button" data-toggle="collapse" data-target="#carDiv" aria-expanded="false" aria-controls="carDiv">
+	      Car Registration Form
+	    </button>
+	    <div class="collapse" id="carDiv">
+	      <div class="well">
+		
+		<div id="messageCar" style="display:none;"><p>Your car information has been submitted. You can pick up your car registration sticker in office D004.</p></div>
+		
+		<form id="carForm" class="form-inline">
+		  <label>Please enter your car information:</label>
+		  <dl class="dl-horizontal"><br>
+		  <div class="form-group">
+		    <dt><label for="exampleInputName2">Car Make:</label></dt>
+		    <dd><input type="text" class="form-control" id="exampleInputName2" placeholder=""></dd>
+		  </div>
+		  <div class="form-group">
+		    <dt><label for="exampleInputEmail2">Model:</label></dt>
+		    <dd><input type="email" class="form-control" id="exampleInputEmail2" placeholder=""></dd>
+		  </div>
+		  <div class="form-group">
+		    <dt><label for="exampleInputEmail3">Year:</label></dt>
+		    <dd><input type="email" class="form-control" id="exampleInputEmail3" placeholder=""></dd>
+		  </div>
+		  <div class="form-group">
+		    <dt><label for="exampleInputEmail4">Licence Plate Number:</label></dt>
+		    <dd><input type="email" class="form-control" id="exampleInputEmail4" placeholder=""></dd>
+		  </div>
+		    <div class="checkbox"><br>
+		      <label><input type="checkbox"> By checking this box, I authorize Stockton University residential assistants to take my car for a joyride around campus on every fourth Tuesday of each month.</label>
+		    </div><div><br></div>
+		 <button type="button" class="btn btn-default" onclick="functionCar()">Submit</button>
+		  </dl>
+		</form>
+		
+		
+	      </div>
+	    </div>
+	    
+		
+		
+	    <br><br>
+	    <button class="btn btn-primary btn-long" type="button" data-toggle="collapse" data-target="#bedDiv" aria-expanded="false" aria-controls="bedDiv">
+	      Screen and Bed Waiver Form
+	    </button>
+	    <div class="collapse" id="bedDiv">
+	      <div class="well">
+		
+		<div id="messageBed"></div>
+		<form id="bedForm">
+		<label>Which waiver & request are you submitting?</label>
+		<div class="radio">
+		  
+		  <label><input type="radio" name="r1">Screens (Available for Housing I only)</label>
+		</div>
+		<div class="radio">
+		  <label><input type="radio" name="r1">Bed Rail</label>
+		</div><br>
+		
+		<label>Waiver Agreement</label>
+		<p>Please choose correct statement. Failure to do so will result in a canceled waiver and request.</p>
+		<div class="radio">
+		  
+		  <label><input type="radio" name="r2"> I understand that for my apartment to receive screens, all roommates MUST complete this waiver.  Additionally, I understand that our apartment will be liable for the replacement cost of any damaged or missing screens.</label>
+		</div>
+		<div class="radio">
+		  <label><input type="radio" name="r2"> I understand that I will be responsible if the bed rail sustains any damage or is lost.</label>
+		</div>
+		<p>I agree to the terms of this waiver, and understand I will be liable for damaged or lost items provided to me by the Office of Residential Life as a result of this waiver/request form. </p>
+		
+		<div class="form-group">
+		  <label for="sign">Please enter your initials as your digital signature</label>
+		  <input type="text" class="form-control" id="sign">
+		    <button type="button" class="btn btn-default" onclick="functionBed()">Submit</button>
+		</div>
+		
+		</form>
+		
+	      </div>
+	    </div>
+	    
+	    <br><br>
+	    <button class="btn btn-primary btn-long" type="button" data-toggle="collapse" data-target="#releaseDiv" aria-expanded="false" aria-controls="releaseDiv">
+	      Information Release Authorization Form
+	    </button>
+	    <div class="collapse" id="releaseDiv">
+	      <div class="well">
+		
+		<div id="messageRelease"></div>
+		<form id="releaseForm">
+		<p>I, &nbsp;<input type="text" class="form-control short input-sm">, &nbsp;allow my information to be released under the recipient&#8217;s name below.</p>
+		<p>I understand this can include payment information along with other personal aspects. This information release will allow Stockton University Housing to communicate directly with the recipient in addition to myself. </p>
+		<p>I hereby give the permission of &nbsp;<input type="text" class="form-control input-sm short"> &nbsp; to be given access to my information.</p>
+		<div class="form-group">
+		    <button type="button" class="btn btn-default" onclick="functionRelease()">Submit</button>
+		</div>
+		
+		</form>
+		
+	      </div>
+	    </div>
+	    
+	    
+
+	    
+	    <br><br>
+	    <button class="btn btn-primary btn-long" type="button" data-toggle="collapse" data-target="#cancellationDiv" aria-expanded="false" aria-controls="cancellationDiv">
+	      Housing Contract Cancellation
+	    </button>
+	    <div class="collapse" id="cancellationDiv">
+	      <div class="well">
+		
+		<div id="messageCancel" style="display:none;"><p>We're sorry to see you go! Your application has been submitted. An email has been sent to your Stockton account.</p></div>
+		  <form id="cancelForm">
+		    <div class="checkbox"><br>
+			  <label><input type="checkbox">I understand that in integrating non-aligned structures into existing legacy systems, a holistic gateway blueprint is a backward compatible packaging tangible of immeasurable strategic value in right-sizing conceptual frameworks when thinking outside the box.
+	  </label>
+		    </div>
+		    <div class="checkbox"><br>
+			  <label><input type="checkbox"> I understand that the issues inherent in dominant thematic implementations cannot be understated document distribution on a real operating system consisting primarily of elements regarded as outdated and therefore impelling as a integrated out sourcing avenue to facilitate multi-level name value pairing in static components.</label>
+		    </div>
+		    <div class="checkbox"><br>
+			  <label><input type="checkbox"> I understand that in order to properly merge and articulate these core assets, an acquisition statement outlining the information architecture, leading to a racheting up of convergence across the organic platform is an opportunity without precedent in current applicability transactional housing.</label>
+		    </div>
+		  <div class="form-group">
+		      <div><br></div>
+		      <button type="button" class="btn btn-default" onclick="functionCancel()">Submit</button>
+		  </div>
+		
+		</form>
+		
+	      </div>
+	    </div>
+		
+        </div>
+      
+      
+     
+      </div> <!--row-->
+      
+      
+      <footer class="footer">
+        <div class="row">
+		<div class="col-lg-4">
+			<ul class="list-unstyled">
+			<li><h4>Links:</h4></li>
+			<li><a href="forms.html#">Car Registration Form</a></li>
+			<li><a href="forms.html#">Meal Plan Change Form</a></li>
+			<li><a href="forms.html#">Information Release Form</a></li>
+			<li><a href="forms.html#">Screen and Bed Waiver Form</a></li>
+			<li><a href="forms.html#">Housing Contract Cancellation Form</a></li>
+			<li><a href="https://rsc.managemyid.com/reference.dca?cdx=login" target="_blank">Manage my ID</a></li>
+			<li><a href="http://www.laundryview.com/lvs.php" target="_blank">Laundry View</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-3 text-center">
+			<h4>Follow us:</h4>
+			<br>
+			<a href="https://www.facebook.com/StocktonUResLife" target="_blank"><img src="img/facebook.png" width="48px"></a>
+			<a href="https://instagram.com/livestockton/" target="_blank"><img src="img/instagram.png" width="48px"></a>
+			<a href="https://www.youtube.com/user/StocktonCollegeNJ"  target="_blank"><img src="img/youtube.png" width="48px"></a>
+		</div>
+		<div class="col-lg-5">
+			<h4 class="text-center">Contact:</h4>
+			
+			  <dl class="dl-horizontal">
+
+
+				<dt>Email:</dt><dd>housing@stockton.edu</dd>
+				<dt>Location:</dt> <dd>A100, 82-4</dd>  
+				<dt>Telephone:</dt> <dd>(609) 652-4697</dd>
+				
+				<dt>Hours:</dt> <dd>9:00 AM - 7:00 PM</dd>
+					
+				<dt>Address:</dt> <dd>101 Vera King Farris Drive</dd>
+				<dd>Galloway, New Jersey 08205</dd>
+				<dt>Fax:</dt> <dd>(609) 626-5520</dd>
+			  </dl>
+		</div>
+	<div style="clear: both;"></div>
+		<div id="copy">
+			<p>&copy;</p>
+		</div>
+	</div>
+      </footer>
+
+    </div> <!-- /container -->
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+		  function functionBed() {
+		      document.getElementById("bedForm").style.display = "none";
+		      document.getElementById("messageBed").appendChild(document.createElement("p").appendChild(document.createTextNode("Your form has been submitted. A confirmation email has been sent to your Stockton account.")));
+		  }
+    </script>
+    <script>
+		  function functionMeal() {
+		      document.getElementById("mealForm").style.display = "none";
+		      document.getElementById("messageMeal").style.display = "inline";		  }
+    </script>
+    <script>
+		  function functionRelease() {
+		      document.getElementById("releaseForm").style.display = "none";
+		      document.getElementById("messageRelease").appendChild(document.createElement("p").appendChild(document.createTextNode("Your form has been submitted. A confirmation email has been sent to your Stockton account.")));
+		  }
+    </script>
+    <script>
+		  function functionCar() {
+		      document.getElementById("carForm").style.display = "none";
+		      document.getElementById("messageCar").style.display = "inline";		  }
+    </script>
+    <script>
+		  function functionCancel() {
+		      document.getElementById("cancelForm").style.display = "none";
+		      document.getElementById("messageCancel").style.display = "inline";		  }
+    </script>
+
+
+</body>
+</html>
